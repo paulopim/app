@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VIP CAR WASH - Autónomo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo" style="text-align: center;">
+                <img src="images/00-logo.png" width="504" height="338" style="max-width: 100%; height: auto;">
+            </div>
+            <p>IVA no incluido</p>
+            <div class="logo">&nbsp;Combos listos para ti o limpieza diseñada a tu medida.</div>
+            <h1>&nbsp;</h1>
+            <div class="small">
+                <p>Los Coches de más de 5 plazas o furgonetas tienen un adicional de 35%</p>
+            </div>
+        </header>
+        <section>
+            <h2 style="color:#d99a1a">Combos</h2>
+            <div class="grid" id="combos">
+                <div class="card">
+                    <img src="images/01-básico.jpg" alt="BÁSICO">
+                    <div class="title">BÁSICO</div>
+                    <div class="price">150 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Exterior: Lavado, Secado, Llantas, Marcos y Cristales. Interior: Aspirado, Maletero y Cristales.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="radio" name="pack" value="basico"> Seleccionar</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/02-full-detail.jpg" alt="FULL DETAIL">
+                    <div class="title">FULL DETAIL</div>
+                    <div class="price">250 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Prelavado, Detallado Exterior/Interior Superior, Llantas, Encerado, Motor, Hidratación, Ozono, Antiolores, Tapizado Total.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="radio" name="pack" value="full_detail"> Seleccionar</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/03-premium.jpg" alt="PREMIUM">
+                    <div class="title">PREMIUM</div>
+                    <div class="price">750 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Exterior: Prelavado, Lavado Premium, Detallado Llantas, Pasos de rueda y Bajos. Interior: Super Aspirado, Lavado Alfombras y Moquetas, etc.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="radio" name="pack" value="premium"> Seleccionar</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 style="color:#d99a1a">Exterior Básico</h2>
+            <div class="grid" id="exterior_basico">
+                <div class="card" id="card-ext-basica">
+                    <img src="images/04-limpieza-exterior-básica.jpg" alt="Limpieza exterior básica">
+                    <div class="title">Limpieza exterior básica</div>
+                    <div class="price">50 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Limpieza De Mantenimiento, Ideal Para Hacer Cada 15 Días.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="ext_limpieza_exterior_basica"> Añadir</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 style="color:#d99a1a">Extras Exteriores</h2>
+            <div class="grid" id="exterior">
+                <div class="card">
+                    <img src="images/05-limpieza-bajos.jpg" alt="LIMPIEZA BAJOS">
+                    <div class="title">LIMPIEZA BAJOS</div>
+                    <div class="price">12 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Eliminación De Sal, Barro Y Suciedad Acumulada En Los Bajos. Esencial En Zonas Litorales Como Ibiza.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="ext_limpieza_bajos"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/06-capota-y-mecanismo.jpg" alt="CAPOTA Y MECANISMO">
+                    <div class="title">CAPOTA Y MECANISMO</div>
+                    <div class="price">69 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Limpieza Del Techo Descapotable Y Su Sistema. Un Cuidado Profesional.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="ext_capota_y_mecanismo"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/07-tratamiento-cerámico.jpg" alt="TRATAMIENTO CERÁMICO">
+                    <div class="title">TRATAMIENTO CERÁMICO</div>
+                    <div class="price">490 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Capa Cerámica De Larga Duración (12-24 Meses): Protección Extrema Contra Suciedad, Uv Y Lavados. Brillo Constante Y Mantenimiento Fácil.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="ext_tratamiento_ceramico"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/08-corrección-pintura.jpg" alt="CORRECCIÓN PINTURA">
+                    <div class="title">CORRECCIÓN PINTURA</div>
+                    <div class="price">1750 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Solución Profesional Para Defectos Profundos: Rayones, Hologramas, Oxidación. Resultado De Alta Gama, Como Recién Pintado.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="ext_correccion_pintura"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/09-cristales.jpg" alt="CRISTALES">
+                    <div class="title">CRISTALES</div>
+                    <div class="price">12 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Limpieza Profesional De Parabrisas Y Lunas: Sin Marcas, Sin Velos. Máxima Seguridad Al Volante.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="ext_cristales"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/10-cromados.jpg" alt="CROMADOS">
+                    <div class="title">CROMADOS</div>
+                    <div class="price">18 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Abrillantado De Elementos Cromados: Parrillas, Molduras, Tiradores. ¡Brillo Espejo Sin Rayas!</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="ext_cromados"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/11-descont-pintura.jpg" alt="DESCONT. PINTURA">
+                    <div class="title">DESCONT. PINTURA</div>
+                    <div class="price">89 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Eliminación De Contaminantes Incrustados (Polvo De Freno, Resina, Metal) Con Barra De Arcilla. Base Perfecta Para Sellados.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="ext_descont_pintura"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/12-encerado.jpg" alt="ENCERADO">
+                    <div class="title">ENCERADO</div>
+                    <div class="price">85 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Protección Natural Con Cera De Carnauba Premium: Brillo Cálido, Repelencia Al Agua Y Cuidado Contra Los Rayos Uv.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="ext_encerado"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/13-pulido-de-faros.jpg" alt="PULIDO DE FAROS">
+                    <div class="title">PULIDO DE FAROS</div>
+                    <div class="price">99 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Restauración Óptica De Faros Empañados O Amarillentos. Recuperamos Transparencia Y Potencia Lumínica.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="ext_pulido_de_faros"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/14-detallado-llantas.jpg" alt="DETALLADO LLANTAS">
+                    <div class="title">DETALLADO LLANTAS</div>
+                    <div class="price">39 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Eliminación Profunda De Polvo De Freno, Grasa Y Suciedad Adherida. ¡Llantas Como De Concesionario!</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="ext_detallado_llantas"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/15-marcos-de-puerta.jpg" alt="MARCOS DE PUERTA">
+                    <div class="title">MARCOS DE PUERTA</div>
+                    <div class="price">11 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Limpieza De Una Zona Muy Visible Y Olvidada. Acabado Impecable Hasta En Los Detalles.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="ext_marcos_de_puerta"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/16-detallado-motor.jpg" alt="DETALLADO MOTOR">
+                    <div class="title">DETALLADO MOTOR</div>
+                    <div class="price">89 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Limpieza Estética Y Funcional Del Compartimento Del Motor. Eliminamos Grasa Y Suciedad Sin Riesgo Para La Electrónica.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="ext_detallado_motor"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/17-renovación-plásticos.jpg" alt="RENOVACIÓN PLÁSTICOS">
+                    <div class="title">RENOVACIÓN PLÁSTICOS</div>
+                    <div class="price">39 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Recuperamos El Color Y Brillo Del Parachoques, Parrillas Y Molduras Con Protección Anti-Uv.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="ext_renovacion_plasticos"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/18-pulido.jpg" alt="PULIDO">
+                    <div class="title">PULIDO</div>
+                    <div class="price">799 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Pulido Profesional Para Eliminar Microarañazos Y Marcas De Lavado. Brillo Intenso Y Superficie Espejo.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="ext_pulido"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/19-techo-panorámico.jpg" alt="TECHO PANORÁMICO">
+                    <div class="title">TECHO PANORÁMICO</div>
+                    <div class="price">12 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Limpieza Específica (Interior Y Exterior) Para Máxima Claridad Y Estética Premium.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="ext_techo_panoramico"> Añadir</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 style="color:#d99a1a">Interior Básico</h2>
+            <div class="grid" id="interior_basico">
+                <div class="card" id="card-int-basica">
+                    <img src="images/20-limpieza-interior-básica.jpg" alt="Limpieza interior básica">
+                    <div class="title">Limpieza interior básica</div>
+                    <div class="price">50 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Limpieza De Mantenimiento, Ideal Para Hacer Cada 15 Días.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="int_limpieza_interior_basica"> Añadir</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 style="color:#d99a1a">Extras Interiores</h2>
+            <div class="grid" id="interior">
+                <div class="card">
+                    <img src="images/21-alfombras.jpg" alt="ALFOMBRAS">
+                    <div class="title">ALFOMBRAS</div>
+                    <div class="price">29 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Aspirado, Limpieza Y Desinfección Intensiva De Alfombras. Perfecto Para Eliminar Restos De Barro, Arena O Líquidos.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="int_alfombras"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/22-olor-a-coche-nuevo.jpg" alt="OLOR A COCHE NUEVO">
+                    <div class="title">OLOR A COCHE NUEVO</div>
+                    <div class="price">49 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Fragancia Premium Que Recrea El Aroma Inconfundible De Coche Recién Estrenado. ¡Una Experiencia Sensorial De Lujo!</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="int_tratamiento_antiolores"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/23-cinturones.jpg" alt="CINTURONES">
+                    <div class="title">CINTURONES</div>
+                    <div class="price">19 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Higienización Segura De Cinturones: Eliminamos Suciedad Y Olores Sin Afectar Su Resistencia Ni Funcionamiento.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="int_cinturones"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/24-cristales.jpg" alt="CRISTALES">
+                    <div class="title">CRISTALES</div>
+                    <div class="price">12 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Limpieza Sin Velos Ni Marcas En Lunas Interiores. Visibilidad Nítida Y Acabado Impecable.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="int_cristales"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/25-cuero.jpg" alt="CUERO">
+                    <div class="title">CUERO</div>
+                    <div class="price">160 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Limpieza, Hidratación Y Protección De Superficies De Cuero. Recupera Brillo, Suavidad Y Evita Grietas Con El Tiempo.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="int_cuero"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/26-silla-infantil.jpg" alt="SILLA INFANTIL">
+                    <div class="title">SILLA INFANTIL</div>
+                    <div class="price">18 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Limpieza Segura, Higiénica Y Desinfección De Sillas Infantiles: Arneses, Tejidos Y Plásticos Como Nuevos.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="int_silla_infantil"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/27-maletero.jpg" alt="MALETERO">
+                    <div class="title">MALETERO</div>
+                    <div class="price">19 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Limpieza Profunda y Desinfección Del Maletero. Listo para Viajes, compras o Mudanzas.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="int_maletero"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/28-moquetas.jpg" alt="MOQUETAS">
+                    <div class="title">MOQUETAS</div>
+                    <div class="price">59 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Extracción Profunda De Suciedad,Olores Y Desinfección Con Maquinaria Profesional. ¡Como Si Fueran Nuevas!</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="int_moquetas"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/29-ozono.jpg" alt="OZONO">
+                    <div class="title">OZONO</div>
+                    <div class="price">59 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Desinfección Total Con Ozono: Elimina Virus, Bacterias, Hongos Y Olores Persistentes (Tabaco, Mascotas, Comida).</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="int_ozono"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/30-pelos-mascota.jpg" alt="PELOS MASCOTA">
+                    <div class="title">PELOS MASCOTA</div>
+                    <div class="price">49 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Extracción Especializada De Pelos Incrustados En Asientos, Alfombras Y Costuras. ¡Adiós A Los Rastros De Tu Fiel Compañero!</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="int_pelos_mascota"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/31-rejillas.jpg" alt="REJILLAS">
+                    <div class="title">REJILLAS</div>
+                    <div class="price">40 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Limpieza Minuciosa De Rejillas De Aire: Eliminamos Polvo, Moho Y Biofilm Para Un Aire Más Limpio.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="int_rejillas"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/32-techo.jpg" alt="TECHO">
+                    <div class="title">TECHO</div>
+                    <div class="price">59 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Limpieza Delicada Del Techo Interior Sin Sobresaturar. Limpia El Tejido De Manchas Por Humedad O Uso.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="int_techo"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/33-asientos-textil.jpg" alt="ASIENTOS TEXTIL">
+                    <div class="title">ASIENTOS TEXTIL</div>
+                    <div class="price">120 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Tratamiento Profundo De Asientos De Tela: Eliminamos Manchas, Olores Y Bacterias. Resultado Higiénico Y Rejuvenecedor.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="int_asientos_textil"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/34-volante-y-pomo.jpg" alt="VOLANTE Y POMO">
+                    <div class="title">VOLANTE Y POMO</div>
+                    <div class="price">20 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Desinfección Y Acondicionamiento De Las Zonas De Mayor Contacto. Tacto Suave Y Acabado Premium.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="int_volante_y_pomo"> Añadir</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/35-limpieza-vómito.jpg" alt="LIMPIEZA VÓMITO">
+                    <div class="title">LIMPIEZA VÓMITO</div>
+                    <div class="price">60 €</div>
+                    <div class="desc" style="font-size: 0.85em; color: #ccc; margin-top: 8px; line-height: 1.3;">Tratamiento De Emergencia: Desinfección Total, Eliminación De Restos Orgánicos Y Neutralización De Olores.</div>
+                    <div style="margin-top:8px">
+                        <label>
+                            <input type="checkbox" data-id="int_limpieza_vomito"> Añadir</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 style="color:#d99a1a">Wrapping</h2>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="images/wrapping.png" alt="Car Wrapping" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(217,154,26,0.12); margin-bottom: 15px;">
+                <p style="color: #ccc; font-size: 0.9em; margin-bottom: 15px; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.4;">VIP Car Wrapp Ibiza transforma la estética del vehículo sin alterar su esencia. Aplicamos vinilos premium para personalizar, proteger y redefinir el carácter de cada coche con acabados impecables.<br><br>
+                <strong>Servicios ofrecidos:</strong> Wrapping completo, Cambios de color, Vinilos mate, satinado y brillo, Texturas especiales, Protección PPF, Personalización estética.<br>
+                <strong>Valor diferencial:</strong> Instalación precisa, materiales de alta calidad y reversibilidad total.</p>
+                <a href="https://wa.me/34664816735" target="_blank" style="display: inline-block; background: #d99a1a; color: #000; padding: 12px 24px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 16px;">Solicita tu Presupuesto</a>
+            </div>
+        </section>
+        <section>
+            <h2 style="color:#d99a1a">Parking Hotel</h2>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="images/vip car hotel.jpg" alt="Parking Hotel" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(217,154,26,0.12); margin-bottom: 15px;">
+                <p style="color: #ccc; font-size: 0.9em; margin-bottom: 15px; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.4;">VIP Car Hotel Ibiza es un servicio exclusivo de custodia y mantenimiento para vehículos de alta gama. Más que un parking, es un espacio seguro donde tu coche recibe atención continua, incluso cuando no lo usas.<br><br>
+                <strong>Servicios ofrecidos:</strong> Parking seguro 24/7, Vigilancia y control, Limpieza y detailing bajo demanda, Mantenimiento periódico, Trámites DGT, Servicio de valet.<br>
+                <strong>Valor diferencial:</strong> Tranquilidad total, comodidad y cuidado integral.</p>
+                <a href="https://wa.me/34664816735" target="_blank" style="display: inline-block; background: #d99a1a; color: #000; padding: 12px 24px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 16px;">Solicita tu Presupuesto</a>
+            </div>
+        </section>
+        <section>
+            <h2 style="color:#d99a1a">Car Painting</h2>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="images/car-painting.jpg" alt="Car Painting" style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(217,154,26,0.12); margin-bottom: 15px;">
+                <p style="color: #ccc; font-size: 0.9em; margin-bottom: 15px; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.4;">VIP Car Paint Ibiza es el centro especializado en devolver la vida, el color y la presencia original a cada vehículo. Cada reparación se aborda con precisión técnica y respeto por el diseño original del coche.<br><br>
+                <strong>Servicios ofrecidos:</strong> Reparación de arañazos y daños, Pintura parcial y completa, Restauración estética, Igualación de color, Acabado espejo y protección final.<br>
+                <strong>Valor diferencial:</strong> Resultados invisibles, acabados de alta gama y procesos controlados.</p>
+                <a href="https://wa.me/34664816735" target="_blank" style="display: inline-block; background: #d99a1a; color: #000; padding: 12px 24px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 16px;">Solicitar Tu presupuesto</a>
+            </div>
+        </section>
+        <div class="layout" style="margin-top:12px">
+            <div>
+            </div>
+            <aside class="aside">
+                <div>
+                    <strong style="color:#d99a1a">Resumen del Pedido</strong>
+                </div>
+                <div style="margin-top:8px">
+                    <label class="small">Nombre del cliente</label>
+                    <input id="clientName" type="text" placeholder="Tu nombre">
+                    <label class="small" style="margin-top:8px">Teléfono</label>
+                    <input id="clientPhone" type="tel" placeholder="PI + Tu Número">
+                </div>
+                <div class="cart-items" id="cartItems">
+                </div>
+                <div class="total">Total: <span id="totalPrice">0</span> €</div>
+                <div style="margin-top:10px">
+                    <button class="btn" id="finalizeBtn">Finalizar compra</button>
+                    <button class="btn" id="downloadPdfBtn"
+                        style="background:transparent;color:#d99a1a;border:1px solid rgba(217,154,26,0.12)">Descargar
+                        PDF</button>
+                </div>
+                <div class="notice">PDF textual. Se descargará y se abrirá WhatsApp al número de la empresa +34 605 980
+                    275.</div>
+            </aside>
+        </div>
+        <script src="script.js">
+        </script>
+</body>
+
+</html>
